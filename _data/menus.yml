@@ -1,8 +1,8 @@
-- default: menu_Home
+- default: menu_index
   url:   "http://ggami-da.github.io"
 
-- default: menu_Categories
+- default: menu_category
   url:   "category"
 
-- default: menu_About
+- default: menu_about
   url:   "about"
