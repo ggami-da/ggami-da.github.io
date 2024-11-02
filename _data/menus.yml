@@ -1,12 +1,8 @@
-- default: menu_index
-  url:   ""
+- default: menu_Home
+  url:   "http://ggami-da.github.io"
 
-- default: menu_category
+- default: menu_Categories
   url:   "category"
 
-- title: "Jekyll Paper"
-  absoluteUrl: true
-  url: "https://github.com/ghosind/Jekyll-Paper"
-
-- default: menu_about
+- default: menu_About
   url:   "about"

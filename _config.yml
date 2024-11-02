@@ -22,7 +22,7 @@ keywords: [Data]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 domain: "ggami-da.github.io" # the domain name for your site, e.g. example.com
-language: ko
+language: en
 # Supported languages list:
 # en: English
 # de: Deutsche (German)
