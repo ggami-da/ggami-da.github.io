@@ -1,5 +1,5 @@
 - default: menu_index
-  url:   "http://ggami-da.github.io"
+  url:   ""
 
 - default: menu_category
   url:   "category"
