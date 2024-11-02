@@ -39,7 +39,7 @@ analytics:   # the Google Analytics property ID, e.g. UA-XXXXX-Y
 paginate: 25
 paginate_path: "/page:num/"
 
-comments: false  # enable comments
+comments: true  # enable comments
 disqus:          # disqus account
 
 mathjax: true # Mathematics
@@ -49,7 +49,7 @@ permalink: /:year/:month/:day/:title
 
 sass:
   sass_dir: _sass
-  style: expanded # compressed, compact, expanded or compressed
+  style: compact # compressed, compact, expanded or compressed
 
 # Category settings
 jekyll-archives:
