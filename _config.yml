@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   For the love of data, let's dive deep together on this blog!
 keywords: [Data]
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ggami-da.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 domain: "ggami-da.github.io" # the domain name for your site, e.g. example.com
 language: en
 # Supported languages list:
