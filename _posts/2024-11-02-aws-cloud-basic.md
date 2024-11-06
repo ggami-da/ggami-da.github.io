@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[AWS] Cloud의 기본 지식"
+title:  "[AWS] Cloud Basic Knowledge"
 date:   2024-11-02
 last_modified_at: 2024-11-02
 categories: [AWS]

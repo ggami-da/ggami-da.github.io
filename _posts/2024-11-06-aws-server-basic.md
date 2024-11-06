@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[AWS] 서버 기본 지식"
+title:  "[AWS] Server Basic Knowledge"
 date:   2024-11-06
 last_modified_at: 2024-11-06
 categories: [AWS]
@@ -28,7 +28,7 @@ OS는 사람이 기기의 관리와 제어를 수행하기 위한 인터페이�
 
 예를 들어서 책에서는 아래와 같이 표현을 하고 있습니다. 
 
-![AWS 서버 기본](img/aws-server-basic.png)
+![AWS Server Basic](img/aws-server-basic.png)
 
 물리서버 = 단독 주택
 가상서버 = 아파트
