@@ -12,9 +12,9 @@ permalink: /category/
     {% for category in site.categories %}
       <li>
         <!-- 카테고리 이름을 링크로 만들지 않고 텍스트로만 표시 -->
-        <strong>{{ category | first }}</strong>
+        <strong>{{ category[0] }}</strong>
         <ul>
-          {% assign category_posts = site.posts | where_exp: "post", "post.categories contains category | first" %}
+          {% assign category_posts = site.posts | where_exp: "post", "post.categories contains category[0]" %}
           {% for post in category_posts %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
