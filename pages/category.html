@@ -11,11 +11,12 @@ permalink: /category/
   <ul class="categories-list">
     {% for category in site.categories %}
       <li>
-        <a href="{{ site.baseurl }}/category/{{ category | first | slugify }}">{{ category | first }}</a>
+        <!-- 카테고리 이름을 텍스트로 표시 -->
+        <strong>{{ category | first }}</strong>
         <ul>
-          {% assign category_posts = site.posts | where_exp: "post", "post.categories contains 'AWS'" %}
+          {% assign category_posts = site.posts | where_exp: "post", "post.categories contains category | first" %}
           {% for post in category_posts %}
-            <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
       </li>
