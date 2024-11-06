@@ -28,7 +28,7 @@ OS는 사람이 기기의 관리와 제어를 수행하기 위한 인터페이�
 
 예를 들어서 책에서는 아래와 같이 표현을 하고 있습니다. 
 
-![aws-server-baic](./assets/images/aws-server-basic.png)
+![aws-server-baic](ggami-da.github.io/assets/images/aws-server-basic.png)
 
 물리서버 = 단독 주택
 가상서버 = 아파트
