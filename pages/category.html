@@ -11,7 +11,7 @@ permalink: /category/
   <ul class="categories-list">
     {% for category in site.categories %}
       <li>
-        <!-- 카테고리 이름을 텍스트로 표시 -->
+        <!-- 카테고리 이름을 텍스트로만 표시 -->
         <strong>{{ category | first }}</strong>
         <ul>
           {% assign category_posts = site.posts | where_exp: "post", "post.categories contains category | first" %}
