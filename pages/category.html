@@ -13,7 +13,7 @@ permalink: /category/
       <li>
         <a href="{{ site.baseurl }}/category/{{ category | first | slugify }}">{{ category | first }}</a>
         <ul>
-          {% assign category_posts = site.posts | where: "category", category | first %}
+          {% assign category_posts = site.posts | where_exp: "post", "post.categories contains 'AWS'" %}
           {% for post in category_posts %}
             <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
