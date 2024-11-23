@@ -38,9 +38,9 @@ Python과 R에서 많이 사용되는 이유 중 하나 **단순함, 효율성, 
 
 이렇게 자식 노드 나누기를 연속적으로 적용하면 노드가 계속 증가하는 나무(tree)와 같은 형태로 표현할 수 있습니다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2f3b71b1-6eff-4d14-b560-529b11d66146/ff0566f2-22db-4696-948e-3864da11f86b/image.png)
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2f3b71b1-6eff-4d14-b560-529b11d66146/0bbf96f3-7920-4fd4-9d99-d37ef14d16fd/image.png)
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2f3b71b1-6eff-4d14-b560-529b11d66146/fdc5dfc8-6572-4019-9f53-afda854ed024/image.png)
+![image.png](/ggami-da.github.io/_posts/img//decision-tree(1).png)
+![image.png](/ggami-da.github.io/_posts/img//decision-tree(2).png)
+![image.png](/ggami-da.github.io/_posts/img//decision-tree(3).png)
 
 {: .box-success}
 plot을 기반으로 해석을 하고자 하는 경우에는 max_depth를 조정하여 도메인적으로 타당한 수준을 확인하여 나무를 생성하는 경우도 있습니다.
