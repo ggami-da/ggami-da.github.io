@@ -3,7 +3,6 @@ layout: post
 title:  "[ML] Decision Tree"
 date:   2024-11-23
 last_modified_at: 2024-11-23
-use_math: true
 categories: [ML]
 tags: [ML, Data]
 ---
