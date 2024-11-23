@@ -22,3 +22,7 @@
 <script src="{{ site.baseurl }}/assets/script/jekyllpaper.js" async ></script>
 <script src="https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js" onload="javascript:loadMermaid();" async></script>
 {% endif %}
+
+{% if page.use_math %}
+  {% include mathjax_support.html %}
+{% endif %}
