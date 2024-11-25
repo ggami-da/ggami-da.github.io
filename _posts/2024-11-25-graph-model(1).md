@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Casual Inference] Graph Model 기초"
+title:  "[Casual Inference] Graph Model - DAG 기초"
 date:   2024-11-23
 last_modified_at: 2024-11-23
 categories: [Casual Inference]
