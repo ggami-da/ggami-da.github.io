@@ -77,7 +77,7 @@ nx.draw(
 )
 plt.title("Directed Graph Representation", fontsize=14)
 plt.show()
-
+```
 
 ![image.png](../../../../img/graph-model(3).png)
 
