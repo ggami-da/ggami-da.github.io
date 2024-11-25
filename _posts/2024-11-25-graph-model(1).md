@@ -56,6 +56,34 @@ DAG에서 주요하게 알아야 할 용어를 소개하겠습니다.
 - 조상(ancestor)
 - 후손(descendant)
 
+```python
+import matplotlib.pyplot as plt
+import networkx as nx
+
+# Create a directed graph for the given diagram
+G = nx.DiGraph()
+
+# Add edges based on the provided image (A -> Z -> D, A -> B, Z -> B)
+G.add_edges_from([("A", "Z"), ("Z", "D"), ("B", "D"), ("Z", "B")])
+
+# Define positions for nodes to make the graph clear and organized
+pos = {
+    "A": (0, 1),
+    "Z": (1, 1),
+    "D": (2, 1),
+    "B": (1, 0)
+}
+
+# Draw the graph with labels and customized appearance
+plt.figure(figsize=(6, 4))
+nx.draw(
+    G, pos, with_labels=True, arrows=True,
+    node_color='skyblue', edge_color='darkred', font_size=12,
+    node_size=2000, arrowstyle='-|>', arrowsize=20
+)
+plt.title("Directed Graph Representation", fontsize=14)
+plt.show()
+
 ![image.png](../../../../img/graph-model(3).png)
 
 첫 번째, A는 Z의 부모(parent)입니다.  
