@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "[AB Test] 가장 일반적인 검정 - t검정"
-date:   2024-11-26
-last_modified_at: 2024-11-26
+date:   2024-11-27
+last_modified_at: 2024-11-27
 categories: [AB Test, Statistic]
 tags: [Casual Inference, Data]
 ---
@@ -224,4 +224,4 @@ t.test(control_scores, treatment_scores, var.equal = TRUE)
 - Wasserman, L. (2004). *All of Statistics*. Springer.
 - Razali, N. M., & Wah, Y. B. (2011). Power comparisons of Shapiro-Wilk, Kolmogorov-Smirnov, Lilliefors, and Anderson-Darling tests. *Journal of Statistical Modeling and Analytics*, 2(1), 21-33.
 - Efron, B., & Tibshirani, R. J. (1994). *An Introduction to the Bootstrap*. CRC Press.
-- 온라인 AB 테스트 책
+- - **Trustworthy Online Controlled Experiments**
