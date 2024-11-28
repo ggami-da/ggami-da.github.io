@@ -4,7 +4,7 @@ title:  "[AB Test] 가장 일반적인 검정 - t검정"
 date:   2024-11-27
 last_modified_at: 2024-11-27
 categories: [AB Test, Statistic]
-tags: [Casual Inference, Data]
+tags: [Statistic, Data]
 ---
 
 {: .box-success}

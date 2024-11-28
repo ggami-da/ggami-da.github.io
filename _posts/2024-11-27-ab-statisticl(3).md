@@ -4,7 +4,7 @@ title:  "[AB Test] Type 1, 2 Error, Power Analysis"
 date:   2024-11-27
 last_modified_at: 2024-11-27
 categories: [AB Test, Statistic]
-tags: [Casual Inference, Data]
+tags: [Statistic, Data]
 ---
 
 {: .box-success}
