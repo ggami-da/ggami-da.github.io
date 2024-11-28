@@ -10,12 +10,6 @@ tags: [Casual Inference, Data]
 {: .box-success}
 주로 분석할 때 많이 사용하는 이론을 간략히 정리합니다.
 
-# 제목 없음
-
-**1종 오류(Type I Error), 2종 오류(Type II Error), 그리고 검정력(Statistical Power)에 대한 상세한 정리**
-
----
-
 ### **1. 1종 오류(Type I Error)**
 
 **정의**: 1종 오류는 **실제로는 귀무가설이 참(true)**인데도 불구하고, **잘못하여 귀무가설을 기각하는 오류**를 말합니다. 이는 **거짓 양성(False Positive)** 결과로도 알려져 있습니다.
@@ -185,8 +179,7 @@ $$
 
 ### **1. 사후 검정력 분석의 잘못된 사용**
 
-```
-# 가상 데이터 생성
+```R
 set.seed(123)
 n <- 15
 group1 <- rnorm(n, mean = 100, sd = 15)
@@ -195,7 +188,6 @@ group2 <- rnorm(n, mean = 105, sd = 15)
 # t-검정 수행
 test_result <- t.test(group1, group2, var.equal = TRUE)
 print(test_result)
-
 ```
 
 **t-검정 결과 해석**:
@@ -204,7 +196,7 @@ print(test_result)
 
 ### **사후 검정력 계산**
 
-```
+```R
 # 효과크기 계산(Cohen's d)
 library(effsize)
 effect_size <- cohen.d(group1, group2, pooled=TRUE)$estimate
@@ -214,7 +206,6 @@ print(effect_size)
 library(pwr)
 power_result <- pwr.t.test(n = n, d = effect_size, sig.level = 0.05, type = "two.sample", alternative = "two.sided")
 print(power_result)
-
 ```
 
 **사후 검정력 결과**:
@@ -251,9 +242,8 @@ $$
 
 - 따라서, 각 그룹에 **약 120명의 표본**이 필요합니다.
 
-### **R 코드를 사용한 표본 크기 계산**
 
-```
+```R
 library(pwr)
 power_calculation <- pwr.t.test(d = 5/15, sig.level = 0.05, power = 0.8, type = "two.sample", alternative = "two.sided")
 print(power_calculation)
@@ -266,19 +256,6 @@ print(power_calculation)
 
 ---
 
-### **결론 및 권고사항**
-
-1. **사전 검정력 분석의 중요성**:
-    - 연구를 시작하기 전에 충분한 표본 크기를 계획하여 원하는 검정력을 확보해야 합니다.
-    - 이를 통해 실제 효과를 발견할 수 있는 가능성을 높입니다.
-2. **사후 검정력 분석의 지양**:
-    - 관측된 데이터로부터 사후에 검정력을 계산하는 것은 의미가 없으며, 잘못된 해석을 초래할 수 있습니다.
-    - 대신, **효과크기와 신뢰구간**을 보고하여 결과를 해석하는 것이 바람직합니다.
-3. **효과크기와 신뢰구간의 활용**:
-    - 효과크기는 실험의 실제적인 의미를 제공하며, 신뢰구간은 효과크기의 불확실성을 나타냅니다.
-    - 이를 기반으로 결과를 해석하고, 추가 연구의 필요성을 판단할 수 있습니다.
-
----
 
 ### **참고 문헌**
 
