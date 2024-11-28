@@ -121,29 +121,20 @@ $$
 ### 계산 과정
 
 1. **델타 % 계산**:
-
 $$
 \delta = \frac{8}{5} - 1 = 0.6 \text{ 또는 } 60\%
 $$
-
 2. **분산 계산**:
-
 $$
 \operatorname{Var}(R) \approx \left( \frac{1}{5} \right)^2 \times 1^2 + \left( \frac{8}{5^2} \right)^2 \times 0.8^2 = 0.04 + 0.08192 = 0.12192
 $$
-
 3. **델타 %의 표준 오차**:
-
 $$
 SE_{\delta} = \sqrt{\operatorname{Var}(R)} = \sqrt{0.12192} \approx 0.349
-
 $$
-
 4. **신뢰구간 (95% 신뢰수준)**:
-
 $$
 \delta \pm 1.96 \times SE_{\delta} = 0.6 \pm 1.96 \times 0.349 = 0.6 \pm 0.683 \Rightarrow \text{약 } [-0.083, 1.283]
-
 $$
 
 따라서, 델타 %의 95% 신뢰구간은 **-8.3%에서 128.3%** 사이입니다.
