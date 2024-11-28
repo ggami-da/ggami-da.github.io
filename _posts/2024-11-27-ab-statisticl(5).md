@@ -56,7 +56,7 @@ $$
 
 ### (2) 델타 방법 적용
 
-- *비율 $$ R $$**와 **델타 % $$ \delta $$**를 정의합니다.
+- 비율 $$R$$와 델타 % $$\delta$$를 정의합니다.
 
 $$
 \begin{align*}
@@ -65,7 +65,7 @@ R &= \frac{\bar{X}_1}{\bar{X}_2} \\
 \end{align*}
 $$
 
-**델타 방법**을 사용하여 $$ R $$의 분산을 근사합니다.
+**델타 방법**을 사용하여 $$R$$의 분산을 근사합니다.
 
 $$
 \operatorname{Var}(R) \approx \left( \frac{\partial R}{\partial \bar{X}_1} \right)^2 \operatorname{Var}(\bar{X}_1) + \left( \frac{\partial R}{\partial \bar{X}_2} \right)^2 \operatorname{Var}(\bar{X}_2)
@@ -123,7 +123,7 @@ $$
 $$
 \delta = \frac{8}{5} - 1 = 0.6 \text{ 또는 } 60\%
 $$
-2. **분산 계산**:
+2. **$$R$$ 분산 계산**:
 $$
 \operatorname{Var}(R) \approx \left( \frac{1}{5} \right)^2 \times 1^2 + \left( \frac{8}{5^2} \right)^2 \times 0.8^2 = 0.04 + 0.08192 = 0.12192
 $$
