@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[SQL] Programmers - Frontㄷ개발자 찾기 LV4"
+title:  "[SQL] Programmers - Front개발자 찾기 LV4"
 date:   2025-01-02
 last_modified_at: 2025-01-02
 categories: [SQL]
